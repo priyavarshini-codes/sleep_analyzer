@@ -101,3 +101,23 @@ The system uses a relational database with the following tables:
 - Responsive mobile UI
 
 - Deployment on live server
+
+
+## Screenshots
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Questionnaire Page
+![Questionnaire](screenshots/assessment-form-1.png)
+![Questionnaire](screenshots/assessment-form-2.png)
+
+### Results Page
+![Results](screenshots/result.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
+### Manage Questions (Admin)
+![Manage Questions](screenshots/admin_manage_questions.png)
+
