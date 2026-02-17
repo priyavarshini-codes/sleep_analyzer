@@ -62,7 +62,7 @@ $user = $_SESSION['user'] ?? null;
             <circle cx="32" cy="32" r="18" fill="#fde68a"/>
             <circle cx="40" cy="24" r="18" fill="#12203a"/>
           </svg>
-          <div class="small">Animated stars & moon (add JS/CSS later)</div>
+          
         </div>
       </div>
     </div>
