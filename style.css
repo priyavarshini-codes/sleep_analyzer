@@ -1,0 +1,324 @@
+:root{
+  --bg1: #0b1020;
+  --bg2: #12203a;
+  --card: rgba(255,255,255,0.06);
+  --accent: #6dd3ff;
+  --glass: rgba(255,255,255,0.06);
+  --muted: #bfcbdc;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:Inter, Poppins, Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  color:#e6f0ff;
+  min-height:100vh;
+}
+
+.container{
+  max-width:1000px;
+  margin:40px auto;
+  padding:20px;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.logo{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #9bdcff,#5aa6f0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#042536;
+}
+
+h1,h2{margin:0}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  padding:30px;
+  border-radius:14px;
+  background:linear-gradient(
+    135deg,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.01)
+  );
+  box-shadow:0 8px 30px rgba(0,0,0,0.6);
+}
+
+.hero .left{flex:1}
+.hero .cta{margin-top:18px}
+
+.btn{
+  background:var(--accent);
+  color:#042536;
+  padding:12px 20px;
+  border-radius:10px;
+  border:none;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(109,211,255,0.4);
+}
+
+.card-row{
+  display:flex;
+  gap:14px;
+  margin-top:18px;
+}
+
+.info-card{
+  flex:1;
+  padding:16px;
+  border-radius:12px;
+  background:var(--card);
+  backdrop-filter: blur(6px);
+}
+
+.center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+.form-group{margin-bottom:16px}
+
+.input,select{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:rgba(255,255,255,0.05);
+  color:#e6f0ff;
+  font-size:15px;
+  transition:.25s;
+}
+
+.input:focus, select:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 8px rgba(109,211,255,0.4);
+  outline:none;
+}
+
+/* =========================
+   PROGRESS + QUESTIONS
+========================= */
+
+.progress{
+  height:10px;
+  background:rgba(255,255,255,0.04);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.progress > i{
+  display:block;
+  height:100%;
+  background:linear-gradient(90deg,#5ad0ff,#6dd3ff);
+}
+
+.question-card{
+  padding:20px;
+  border-radius:12px;
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.01)
+  );
+  margin:20px 0;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.table th,.table td{
+  padding:10px;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  color:var(--muted);
+}
+
+.small{
+  font-size:13px;
+  color:#b9cbe0;
+}
+
+/* =========================
+   RECOMMENDATION CARDS
+========================= */
+
+.reco-card{
+  padding:14px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.03);
+  margin:10px 0;
+}
+
+/* =========================
+   ADMIN LAYOUT
+========================= */
+
+.content-row{
+  display:flex;
+  gap:18px;
+}
+
+/* 🔹 UPDATED ADMIN SIDEBAR (MATCHED THEME) */
+.admin-sidebar{
+  width:220px;
+  padding:16px;
+  border-radius:12px;
+
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+
+  color:rgba(255,255,255,0.08);
+  border-right:1px solid rgba(255,255,255,0.08);
+  box-shadow:6px 0 20px rgba(0,0,0,0.45);
+}
+
+.admin-sidebar a{
+  display:block;
+  padding:8px 10px;
+  margin:4px 0;
+  border-radius:8px;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+  transition:.25s;
+}
+
+.admin-sidebar a:hover{
+  background:#0b1020;
+  transform:translateX(4px);
+}
+
+/* 🔹 MAIN ADMIN CONTENT */
+.admin-main{
+  flex:1;
+  padding:20px;
+  background:radial-gradient(
+    circle at top,
+    rgba(255,255,255,0.03),
+    rgba(0,0,0,0)
+  );
+  border-radius:14px;
+}
+.admin-main {
+  background: #12203a;       /* dark blue, same as your theme */
+  color: #e6f0ff;            /* light text */
+  padding: 20px;
+  border-radius: 12px;       /* optional for a card effect */
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  margin-top:40px;
+  color:rgba(255,255,255,0.4);
+  text-align:center;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
+}
+
+.login-card{
+  width:100%;
+  max-width:420px;
+  padding:32px;
+  border-radius:14px;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 35px rgba(0,0,0,0.6);
+  animation: fadeIn .6s ease;
+}
+
+.login-card h2{
+  text-align:center;
+  margin-bottom:22px;
+  font-size:26px;
+  font-weight:700;
+  color:#e8f3ff;
+}
+
+.login-card p{
+  text-align:center;
+  margin-top:16px;
+  font-size:13px;
+  color:rgba(255,255,255,0.5);
+}
+
+.login-card a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.login-card a:hover{
+  text-decoration:underline;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(10px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:860px){
+  .hero{flex-direction:column}
+  .card-row{flex-direction:column}
+  .content-row{flex-direction:column}
+}

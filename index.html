@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sleep Quality Analyzer</title>
+
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Understand your sleep patterns and improve your rest.">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">SQ</div>
+        <div>
+          <h1>SLEEP QUALITY ANALYZER</h1>
+          <div class="small">Understand your sleep patterns and improve your rest.</div>
+        </div>
+      </div>
+
+      <div>
+        <a href="login.php" class="small">Login</a>
+        <a href="register.php" class="small" style="margin-left:10px">Register</a>
+      </div>
+    </div>
+
+    <main class="hero" role="main">
+      <div class="left">
+        <h2 style="margin:0 0 8px 0">Track — Analyze — Improve</h2>
+
+        <p class="small">
+          Answer a short questionnaire and receive a clear sleep score,
+          insights and personalised tips to sleep better.
+        </p>
+
+        <div class="cta">
+          <!-- FIXED BUTTON CLASS -->
+          <a href="questionnaire.php" class="btn">Start Sleep Test →</a>
+        </div>
+
+        <div class="card-row">
+          <div class="info-card">
+            <strong>Sleep duration</strong>
+            <div class="small" style="margin-top:6px">
+              Average nightly minutes tracked
+            </div>
+          </div>
+
+          <div class="info-card">
+            <strong>Sleep efficiency</strong>
+            <div class="small" style="margin-top:6px">
+              How effectively you sleep
+            </div>
+          </div>
+
+          <div class="info-card">
+            <strong>Stress & restfulness</strong>
+            <div class="small" style="margin-top:6px">
+              What impacts your rest
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center" aria-hidden="true">
+        <!-- Moon SVG -->
+        <svg width="220" height="220" viewBox="0 0 64 64"
+             xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#9bdcff"/>
+              <stop offset="1" stop-color="#5aa6f0"/>
+            </linearGradient>
+          </defs>
+
+          <circle cx="32" cy="32" r="18" fill="url(#g1)"/>
+          <circle cx="40" cy="24" r="18" fill="#071a2b"/>
+        </svg>
+      </div>
+    </main>
+
+    <section style="margin-top:22px">
+      <h3 style="margin:0 0 6px 0">How it works</h3>
+      <p class="small">
+        Answer a short quiz → Get an overall sleep score (0–100) →
+        View recommendations to improve your sleep quality.
+      </p>
+    </section>
+
+    <div class="footer">
+      © 2026 Sleep Quality Analyzer
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
